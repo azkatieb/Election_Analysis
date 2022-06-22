@@ -5,14 +5,30 @@
 # 4. The total number of votes each candidate won 
 # 5. The winner of the election based on popular vote
 
-
+#received os not found error - had to define
+import os
 
 # Assign a variable for the file to load and the path.
 # Python not running in script directory full path used - relative path does not currently work
+
 file_to_load = '/Users/katiebernstein/Documents/Data Bootcamp/Git/Election_Analysis/Resources/election_results.csv'
 
 # Create a filename variable to a direct or indirect path to the file.
 file_to_save = os.path.join("/Users/katiebernstein/Documents/Data Bootcamp/Git/Election_Analysis/analysis/", "election_analysis.txt")
+
+# Use the open statement to open the file as a text file.
+with open(file_to_save, "w") as txt_file:
+
+    # Write some data to the file.
+    txt_file.write("Hello World")
+    
+    # Write three counties to the file.
+     txt_file.write("Arapahoe")
+     txt_file.write("Denver")
+     txt_file.write("Jefferson")
+
+# Close the file
+txt_file.close()
 
 # Using the open() function with the "w" mode we will write data to the file.
 open(file_to_save, "w")
