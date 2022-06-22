@@ -11,7 +11,6 @@
 # Python not running in script directory full path used - relative path does not currently work
 file_to_load = '/Users/katiebernstein/Documents/Data Bootcamp/Git/Election_Analysis/Resources/election_results.csv'
 
-
 # Create a filename variable to a direct or indirect path to the file.
 file_to_save = os.path.join("/Users/katiebernstein/Documents/Data Bootcamp/Git/Election_Analysis/analysis/", "election_analysis.txt")
 
